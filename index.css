@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    padding: 30px;
+}
+
+header > section{
+    display: flex;
+    gap: 10px   ;
+    flex-flow: column nowrap;
+}
+
+header p{
+    font-size: .7rem;
+    color: grey;
+}
+
+main section#texto{
+    padding: 10px 30px 10px 30px;
+}
+
+main section#texto h2{
+    font-size: 1rem;
+}
+
+main section#texto p{
+    font-size: .8rem;
+}
+
+
+section#logo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    align-items: center;
+}
+
+main section#blocos{
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px dashed red;
+    width: 90dvw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.blocoInput{
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    gap: 5px;
+
+    p{
+        text-align: center;
+    }
+}
+
+div.blocoInput input {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+div#button input{
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80dvw;
+}
+
+div#button input:hover{
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+}
+
+div#res{
+    border: 1px dashed red;
+    width: 90dvw;
+    height: 20dvh;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2px;
+    justify-content: space-around;
+}
+
+div.aleatorio{
+    background-color: rgb(17, 17, 17);
+    border-radius: 10px;
+    text-align: center;
+}
