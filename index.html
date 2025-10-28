@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="telaGrande.css">
     <script src="index.js" defer></script>
 </head>
 <body>
-    <section id="logo">
-        <div>Logo</div>
-    </section>
-    <header>
-        <section>
-            <p>ONLINE - GRATUITO</p>
-            <H1>SORTEADOR DE NÚMEROS</H1>
+    <div>
+        <section id="logo">
+            <div>Logo</div>
         </section>
+        <header>
+            <section>
+                <p>ONLINE - GRATUITO</p>
+                <H1>SORTEADOR DE NÚMEROS</H1>
+            </section>
+    </div>
     </header>
     <main>
         <section id="texto">
@@ -40,13 +43,20 @@
             </div>
 
         </section>
-        <div>Repetir?</div>
-        <div id="button">
+        <div id="buttonRepeat">
+            <label for="buttonCheck">Ñ Repetir</label>
+            <input type="checkbox" id="buttonCheck">
+        </div>
+        <div id="button" class="button">
             <input type="button" value="SORTEAR" id="sortear">
+        </div>
+        <div class="button" id="buttonRepetir">
+            <input type="button" value="Repetir" id="repetir">
         </div>
         <div id="res">
             
         </div>
+        
     </main>
 </body>
 </html>

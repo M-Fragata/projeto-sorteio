@@ -9,7 +9,13 @@
 }
 
 body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     background-color: black;
+    width: 100dvw;
+    height: 100dvh;
+    border: 1px dashed red;
 }
 
 header{
@@ -51,6 +57,8 @@ main{
     flex-flow: column nowrap;
     gap: 20px;
     align-items: center;
+    max-width: 600px;
+    border: 1px dashed red;
 }
 
 main section#blocos{
@@ -58,6 +66,7 @@ main section#blocos{
     flex-flow: row nowrap;
     border: 1px dashed red;
     width: 90dvw;
+    max-width: 560px;
     justify-content: space-around;
     align-items: center;
 }
@@ -82,21 +91,27 @@ div.blocoInput input {
 }
 
 
-div#button input{
+div.button input{
     background-color: rgb(61, 61, 61);
     padding: 10px;
     border-radius: 10px;
     width: 80dvw;
+    max-width: 560px;
 }
 
-div#button input:hover{
+div.button input:hover{
     background-color: rgb(17, 17, 17);
     cursor: pointer;
+}
+
+input#repetir {
+    display: none;
 }
 
 div#res{
     border: 1px dashed red;
     width: 90dvw;
+    max-width: 560px;
     height: 20dvh;
 
     display: flex;
@@ -109,4 +124,8 @@ div.aleatorio{
     background-color: rgb(17, 17, 17);
     border-radius: 10px;
     text-align: center;
+}
+
+.hidden{
+    display: none;
 }
